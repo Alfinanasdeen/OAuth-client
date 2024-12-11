@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 function Home(userDetails) {
   const user = userDetails.user;
   const logout = () => {
-    window.open("http://oauth-server-l3vt.onrender.com/auth/logout", "_self");
+    window.open("https://oauth-server-l3vt.onrender.com/auth/logout", "_self");
   };
   return (
     <div className={styles.container}>
