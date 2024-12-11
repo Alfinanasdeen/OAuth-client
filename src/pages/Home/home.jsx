@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 function Home(userDetails) {
   const user = userDetails.user;
   const logout = () => {
-    window.open(`${import.meta.env.VITE_API_BASE_URL}/auth/logout`, "_self");
+    window.open("https://oauth-server-l3vt.onrender.co/auth/logout", "_self");
   };
   return (
     <div className={styles.container}>
