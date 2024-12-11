@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 function Signup() {
   const googleAuth = () => {
     window.open(
-      `${import.meta.env.VITE_API_BASE_URL}/auth/google/callback`,
+      "https://oauth-server-l3vt.onrender.com/auth/google/callback",
       "_self"
     );
   };
