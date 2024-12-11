@@ -10,10 +10,7 @@ function Login() {
   };
 
   const GithubAuth = () => {
-    window.open(
-      "https://oauth-server-l3vt.onrender.com/auth/github/callback",
-      "_self"
-    );
+    window.open("https://oauth-server-l3vt.onrender.com/auth/github", "_self");
   };
 
   return (
