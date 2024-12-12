@@ -4,14 +4,14 @@ import styles from "./styles.module.css";
 function Login() {
   const googleAuth = () => {
     window.open(
-      "https://oauth-server-l3vt.onrender.com/auth/google/callback",
+      `${import.meta.env.VITE_API_BASE_URL}/auth/google/callback`,
       "_self"
     );
   };
 
   const GithubAuth = () => {
     window.open(
-      "https://oauth-server-l3vt.onrender.com/auth/github/callback",
+      `${import.meta.env.VITE_API_BASE_URL}/auth/github/callback`,
       "_self"
     );
   };

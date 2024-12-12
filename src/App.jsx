@@ -11,7 +11,7 @@ function App() {
 
   const getUser = async () => {
     try {
-      const url = "https://oauth-server-l3vt.onrender.com/auth/login/success";
+      const url = `${import.meta.env.VITE_API_BASE_URL}/auth/login/success`;
       const { data } = await axios.get(url, { withCredentials: true });
       console.log("User data:", data); // Log user data
       setUser(data.user._json);
