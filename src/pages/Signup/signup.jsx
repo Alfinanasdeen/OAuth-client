@@ -4,14 +4,14 @@ import styles from "./styles.module.css";
 function Signup() {
   const googleAuth = () => {
     window.open(
-      "http://oauth-server-l3vt.onrender.com/auth/google/callback",
+      "https://oauth-server-l3vt.onrender.com/auth/google/callback",
       "_self"
     );
   };
 
   const GithubAuth = () => {
     window.open(
-      "http://oauth-server-l3vt.onrender.com/auth/github/callback",
+      "https://oauth-server-l3vt.onrender.com/auth/github/callback",
       "_self"
     );
   };
