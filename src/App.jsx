@@ -13,9 +13,10 @@ function App() {
     try {
       const url = "https://oauth-server-l3vt.onrender.com/auth/login/success";
       const { data } = await axios.get(url, { withCredentials: true });
+      console.log("User data:", data); // Log user data
       setUser(data.user._json);
     } catch (err) {
-      console.log(err);
+      console.error("Error fetching user:", err.response?.data || err.message);
     }
   };
 
